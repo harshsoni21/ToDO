@@ -1,0 +1,218 @@
+18-11-25,03:24:08PM-INFO-Todo App Get Task List API Requested
+18-11-25,03:24:08PM-ERROR-Failed to fetch task list | error: get_todo_app_task() missing 1 required positional argument: 'task_id'
+18-11-25,03:25:29PM-INFO-Todo App Get Task List API Requested
+18-11-25,03:25:36PM-INFO-Task created successfully: {'title': 'Todays Work', 'description': 'This is all about todays work', 'status': 'pending', 'due_date': '2025-11-18'}
+18-11-25,03:39:28PM-INFO-Todo App Delete Task API Requested for task_id=3
+18-11-25,03:39:28PM-INFO-Task deleted successfully: task_id=3
+18-11-25,03:39:34PM-INFO-Todo App Delete Task API Requested for task_id=3
+18-11-25,03:39:34PM-INFO-Task deleted successfully: task_id=3
+18-11-25,03:39:42PM-INFO-Todo App Delete Task API Requested for task_id=3
+18-11-25,03:39:42PM-INFO-Task deleted successfully: task_id=3
+18-11-25,03:41:08PM-ERROR-Failed to fetch task | task_id=2 | error: module 'todoApp.src.DbOps' has no attribute 'get_task'
+18-11-25,03:41:29PM-INFO-Todo App Get Task List API Requested
+18-11-25,03:43:22PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Wrok', 'description': 'This is all about todays work', 'status': 'pending', 'due_date': '2025-11-18'}
+18-11-25,03:43:28PM-INFO-Todo App Get Task List API Requested
+18-11-25,03:43:48PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Work'}
+18-11-25,03:49:01PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Work'}
+18-11-25,03:49:09PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Wrok', 'description': 'This is all about todays work', 'status': 'pending', 'due_date': '2025-11-18'}
+18-11-25,03:49:21PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday No'}
+18-11-25,03:49:31PM-INFO-Todo App Get Task List API Requested
+18-11-25,04:24:32PM-INFO-Todo App Get Task List API Requested
+18-11-25,04:24:48PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='Completed' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed'],
+     'default': 'pending'}
+
+On instance['status']:
+    'Completed'
+18-11-25,04:24:48PM-ERROR-Validation Failed while creating task
+18-11-25,04:25:14PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='Completed' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed'],
+     'default': 'pending'}
+
+On instance['status']:
+    'Completed'
+18-11-25,04:25:14PM-ERROR-Validation Failed while creating task
+18-11-25,04:25:28PM-INFO-Task created successfully: {'title': 'Todays Work', 'description': 'This is all about todays work', 'status': 'pending', 'due_date': '2025-11-18'}
+18-11-25,04:25:39PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='Completed' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed'],
+     'default': 'pending'}
+
+On instance['status']:
+    'Completed'
+18-11-25,04:25:39PM-ERROR-Validation Failed while creating task
+18-11-25,04:26:44PM-INFO-Task created successfully: {'title': 'Todays Work', 'description': 'This is all about todays work', 'status': 'completed', 'due_date': '2025-11-18'}
+18-11-25,04:27:13PM-INFO-Todo App Delete Task API Requested for task_id=4
+18-11-25,04:27:13PM-INFO-Task deleted successfully: task_id=4
+18-11-25,04:27:19PM-INFO-Todo App Get Task API Requested for task_id=4
+18-11-25,04:27:19PM-WARNING-Task not found: task_id=4
+18-11-25,04:27:28PM-INFO-Todo App Get Task API Requested for task_id=5
+18-11-25,04:27:47PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Wrok', 'description': 'This is all about todays work', 'status': 'completed', 'due_date': '2025-11-18'}
+18-11-25,10:14:32PM-ERROR-Failed to fetch task list | error: no such table: tasks
+18-11-25,10:15:16PM-INFO-Task created successfully: {'title': 'NOC Copilat Engine', 'description': 'Want to Create Noc Engine', 'due_date': '2025-11-20', 'status': 'pending'}
+18-11-25,10:15:55PM-INFO-Task created successfully: {'title': 'DSA Problem Solver Agent ', 'description': 'Want to Create Some more multi ai agent', 'due_date': '2025-11-20', 'status': 'completed'}
+18-11-25,10:16:03PM-WARNING-Method Not Allowed: PUT
+18-11-25,10:16:20PM-WARNING-Method Not Allowed: PUT
+18-11-25,10:17:23PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Wrok', 'description': 'This is all about todays work', 'status': 'completed', 'due_date': '2025-11-18'}
+18-11-25,10:17:53PM-INFO-Task updated successfully: task_id=2, data={'title': 'Monday Wrok', 'description': 'This is all about todays work', 'status': 'completed', 'due_date': '2025-11-18'}
+18-11-25,10:18:02PM-INFO-Task updated successfully: task_id=2, data={'title': 'fffff ', 'description': 'This is all about todays work', 'status': 'completed', 'due_date': '2025-11-18'}
+18-11-25,10:19:17PM-INFO-Task updated successfully: task_id=2, data={'title': 'New File', 'description': 'This is all about todays work', 'due_date': '2025-11-18', 'status': 'completed'}
+18-11-25,10:19:23PM-INFO-Todo App Delete Task API Requested for task_id=2
+18-11-25,10:19:23PM-INFO-Task deleted successfully: task_id=2
+18-11-25,10:19:29PM-INFO-Todo App Delete Task API Requested for task_id=1
+18-11-25,10:19:29PM-INFO-Task deleted successfully: task_id=1
+18-11-25,10:20:02PM-INFO-Task created successfully: {'title': 'New Data Set ', 'description': 'Making things Compatible', 'due_date': '2025-11-05', 'status': 'pending'}
+18-11-25,10:20:11PM-INFO-Task updated successfully: task_id=3, data={'title': 'New Data Set ', 'description': 'Making things Compatible', 'due_date': '2025-11-30', 'status': 'pending'}
+18-11-25,10:20:21PM-INFO-Task updated successfully: task_id=3, data={'title': 'New Data Set ', 'description': None, 'due_date': '2025-11-30', 'status': 'pending'}
+18-11-25,10:20:30PM-INFO-Task updated successfully: task_id=3, data={'title': 'New Data Set ', 'description': None, 'due_date': '2025-11-30', 'status': 'pending'}
+18-11-25,10:30:36PM-INFO-Task created successfully: {'title': 'Company Change', 'description': 'Changing my current organisation', 'due_date': '2025-12-31', 'status': 'pending'}
+18-11-25,10:30:43PM-WARNING-Method Not Allowed: PUT
+18-11-25,10:30:49PM-WARNING-Method Not Allowed: PUT
+18-11-25,10:31:15PM-WARNING-Method Not Allowed: PUT
+18-11-25,10:31:57PM-INFO-Task updated successfully: task_id=3, data={'title': 'New Data Set ', 'description': 'Making things Compatible', 'due_date': '2025-11-30', 'status': 'completed'}
+18-11-25,10:36:12PM-INFO-Task updated successfully: task_id=4, data={'title': 'Company Change', 'description': 'Changing my current organisation', 'due_date': '2025-12-04', 'status': 'pending'}
+18-11-25,10:36:23PM-INFO-Task updated successfully: task_id=4, data={'title': 'Company Change', 'description': 'Changing my current organisation', 'due_date': '2025-11-07', 'status': 'pending'}
+18-11-25,10:36:36PM-INFO-Task updated successfully: task_id=4, data={'title': 'Company Change', 'description': 'Changing my current organisation', 'due_date': '2025-12-19', 'status': 'pending'}
+18-11-25,10:40:04PM-INFO-Task created successfully: {'title': 'dwedwed', 'description': 'cwcxsdcxsdcdsc', 'due_date': '2025-11-13', 'status': 'pending'}
+18-11-25,10:40:17PM-INFO-Task updated successfully: task_id=5, data={'title': 'dwedwed', 'description': 'cwcxsdcxsdcdsc', 'due_date': '2025-11-29', 'status': 'pending'}
+18-11-25,10:40:37PM-INFO-Task updated successfully: task_id=5, data={'title': 'dwedwed', 'description': 'cwcxsdcxsdcdsc', 'due_date': '2025-11-29', 'status': 'completed'}
+18-11-25,10:53:16PM-INFO-Todo App Delete Task API Requested for task_id=5
+18-11-25,10:53:16PM-INFO-Task deleted successfully: task_id=5
+18-11-25,10:53:37PM-INFO-Task created successfully: {'title': 'New  Design Pattern', 'description': 'New Desig', 'due_date': '2025-11-27', 'status': 'pending'}
+18-11-25,10:53:44PM-INFO-Task updated successfully: task_id=6, data={'title': 'New  Design Pattern', 'description': 'New Desig', 'due_date': '2025-11-27', 'status': 'completed'}
+18-11-25,10:54:25PM-INFO-Todo App Delete Task API Requested for task_id=4
+18-11-25,10:54:25PM-INFO-Task deleted successfully: task_id=4
+18-11-25,11:30:13PM-INFO-Todo App Get Task List API Requested
+18-11-25,11:30:13PM-ERROR-Validation Failed while creating task
+18-11-25,11:34:15PM-INFO-Todo App Get Task List API Requested
+18-11-25,11:34:15PM-ERROR-Validation Failed while creating task
+18-11-25,11:35:39PM-INFO-Todo App Get Task List API Requested
+18-11-25,11:35:39PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:52PM-INFO-Todo App Get Task List API Requested
+18-11-25,11:47:52PM-INFO-Task created successfully: {'title': 'Task A', 'description': 'Test', 'due_date': '2025-01-10', 'status': 'pending'}
+18-11-25,11:47:53PM-INFO-Task created successfully: {'title': 'Only Title'}
+18-11-25,11:47:53PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Task Create Schema',
+     'description': 'Schema for creating a new task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Details of task',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date in YYYY-MM-DD '
+                                                'format',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed'],
+                               'default': 'pending'}}}
+
+On instance:
+    {'description': 'Invalid'}
+18-11-25,11:47:53PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:53PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='' should be non-empty
+
+Failed validating 'minLength' in schema['properties']['title']:
+    {'description': 'Task title', 'type': 'string', 'minLength': 1}
+
+On instance['title']:
+    ''
+18-11-25,11:47:53PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:54PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='done' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed'],
+     'default': 'pending'}
+
+On instance['status']:
+    'done'
+18-11-25,11:47:54PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:54PM-INFO-Task created successfully: {'title': 'Date Test', 'due_date': '2025-99-99'}
+18-11-25,11:47:54PM-INFO-Task created successfully: {'title': 'Null Example', 'description': None, 'due_date': None}
+18-11-25,11:47:55PM-INFO-Task created successfully: {'title': 'Huge', 'description': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'}
+18-11-25,11:47:55PM-INFO-Task created successfully: {'title': '1 OR 1=1', 'description': "'; DROP TABLE tasks; --"}
+18-11-25,11:47:55PM-INFO-Todo App Get Task API Requested for task_id=1
+18-11-25,11:47:55PM-WARNING-Task not found: task_id=1
+18-11-25,11:47:56PM-INFO-Todo App Get Task API Requested for task_id=999999
+18-11-25,11:47:56PM-WARNING-Task not found: task_id=999999
+18-11-25,11:47:57PM-WARNING-Task not found: task_id=1
+18-11-25,11:47:57PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Update Task Schema',
+     'description': 'Schema for updating an existing task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Task description',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed']}}}
+
+On instance:
+    {'description': 'Missing title'}
+18-11-25,11:47:57PM-ERROR-Validation Failed for task update: task_id=1
+18-11-25,11:47:57PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Update Task Schema',
+     'description': 'Schema for updating an existing task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Task description',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed']}}}
+
+On instance:
+    {}
+18-11-25,11:47:57PM-ERROR-Validation Failed for task update: task_id=1
+18-11-25,11:47:58PM-WARNING-Task not found: task_id=9999
+18-11-25,11:47:58PM-WARNING-Method Not Allowed: GET
+18-11-25,11:47:58PM-INFO-Todo App Delete Task API Requested for task_id=1
+18-11-25,11:47:58PM-INFO-Task deleted successfully: task_id=1
+18-11-25,11:47:58PM-INFO-Todo App Delete Task API Requested for task_id=1
+18-11-25,11:47:58PM-INFO-Task deleted successfully: task_id=1
+18-11-25,11:48:00PM-INFO-Todo App Get Task List API Requested
+18-11-25,11:48:00PM-INFO-Task created successfully: {'title': 'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT'}
+18-11-25,11:48:00PM-WARNING-Task not found: task_id=2
+18-11-25,11:48:01PM-INFO-Todo App Get Task API Requested for task_id=0
+18-11-25,11:48:01PM-WARNING-Task not found: task_id=0
+18-11-25,11:48:01PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='unknown' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed']}
+
+On instance['status']:
+    'unknown'
+18-11-25,11:48:01PM-ERROR-Validation Failed for task update: task_id=2

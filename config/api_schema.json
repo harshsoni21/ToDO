@@ -1,0 +1,85 @@
+{
+  "$id": "task_schema_v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Task CRUD API Schema",
+  "task_create_api": {
+    "title": "Task Create Schema",
+    "description": "Schema for creating a new task",
+    "type": "object",
+    "required": ["title"],
+    "properties": {
+      "title": {
+        "description": "Task title",
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "description": "Details of task",
+        "type": ["string", "null"]
+      },
+      "due_date": {
+        "description": "Due date in YYYY-MM-DD format",
+        "type": ["string", "null"]
+      },
+      "status": {
+        "description": "Task status",
+        "type": "string",
+        "enum": ["pending", "completed"],
+        "default": "pending"
+      }
+    }
+  },
+
+  "task_update_api": {
+    "title": "Update Task Schema",
+    "description": "Schema for updating an existing task",
+    "type": "object",
+    "required": ["title"],
+    "properties": {
+      "title": {
+        "description": "Task title",
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "description": "Task description",
+        "type": ["string", "null"]
+      },
+      "due_date": {
+        "description": "Due date",
+        "type": ["string", "null"]
+      },
+      "status": {
+        "description": "Task status",
+        "type": "string",
+        "enum": ["pending", "completed"]
+      }
+    }
+  },
+
+  "task_get_api": {
+    "title": "Task Get Schema",
+    "description": "Schema for retrieving a task by ID",
+    "type": "object",
+    "required": ["task_id"],
+    "properties": {
+      "task_id": {
+        "type": "integer",
+        "description": "ID of the task"
+      }
+    }
+  },
+
+  "task_delete_api": {
+    "title": "Task Delete Schema",
+    "description": "Schema for deleting a task by ID",
+    "type": "object",
+    "required": ["task_id"],
+    "properties": {
+      "task_id": {
+        "type": "integer",
+        "description": "ID of the task to delete"
+      }
+    }
+  }
+}

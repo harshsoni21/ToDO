@@ -1,0 +1,5 @@
+django
+rest_framework
+pytest
+pytest-django
+requests

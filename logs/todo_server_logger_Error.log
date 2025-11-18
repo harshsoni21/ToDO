@@ -1,0 +1,98 @@
+18-11-25,10:14:32PM-ERROR-Failed to fetch task list | error: no such table: tasks
+18-11-25,11:30:13PM-ERROR-Validation Failed while creating task
+18-11-25,11:34:15PM-ERROR-Validation Failed while creating task
+18-11-25,11:35:39PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:53PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Task Create Schema',
+     'description': 'Schema for creating a new task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Details of task',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date in YYYY-MM-DD '
+                                                'format',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed'],
+                               'default': 'pending'}}}
+
+On instance:
+    {'description': 'Invalid'}
+18-11-25,11:47:53PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:53PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='' should be non-empty
+
+Failed validating 'minLength' in schema['properties']['title']:
+    {'description': 'Task title', 'type': 'string', 'minLength': 1}
+
+On instance['title']:
+    ''
+18-11-25,11:47:53PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:54PM-ERROR-Rest Api JsonSchema, request_type=task_create_api, Error=='done' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed'],
+     'default': 'pending'}
+
+On instance['status']:
+    'done'
+18-11-25,11:47:54PM-ERROR-Validation Failed while creating task
+18-11-25,11:47:57PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Update Task Schema',
+     'description': 'Schema for updating an existing task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Task description',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed']}}}
+
+On instance:
+    {'description': 'Missing title'}
+18-11-25,11:47:57PM-ERROR-Validation Failed for task update: task_id=1
+18-11-25,11:47:57PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='title' is a required property
+
+Failed validating 'required' in schema:
+    {'title': 'Update Task Schema',
+     'description': 'Schema for updating an existing task',
+     'type': 'object',
+     'required': ['title'],
+     'properties': {'title': {'description': 'Task title',
+                              'type': 'string',
+                              'minLength': 1},
+                    'description': {'description': 'Task description',
+                                    'type': ['string', 'null']},
+                    'due_date': {'description': 'Due date',
+                                 'type': ['string', 'null']},
+                    'status': {'description': 'Task status',
+                               'type': 'string',
+                               'enum': ['pending', 'completed']}}}
+
+On instance:
+    {}
+18-11-25,11:47:57PM-ERROR-Validation Failed for task update: task_id=1
+18-11-25,11:48:01PM-ERROR-Rest Api JsonSchema, request_type=task_update_api, Error=='unknown' is not one of ['pending', 'completed']
+
+Failed validating 'enum' in schema['properties']['status']:
+    {'description': 'Task status',
+     'type': 'string',
+     'enum': ['pending', 'completed']}
+
+On instance['status']:
+    'unknown'
+18-11-25,11:48:01PM-ERROR-Validation Failed for task update: task_id=2

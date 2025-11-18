@@ -1,0 +1,29 @@
+Test Name,Method,URL,Actual Status,Expected Status,Result
+Get Task List,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/,200,200,PASS
+Create Task Success,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Create Task Minimal,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Create Task Invalid Missing Title,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,0,400,FAIL
+Create Task Empty Title,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,0,400,FAIL
+Create Task Status Invalid Enum,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,0,400,FAIL
+Create Task Invalid Date,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,400,FAIL
+Create Task With Null Fields,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Create Task Huge Description,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Create Task SQL Injection Attempt,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Get Valid Task 1,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/1/,0,200,FAIL
+Get Task Not Exist,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/999999/,0,404,FAIL
+Get Task Negative ID,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/-1/,0,400,FAIL
+Update Task Success,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/1/update/,0,200,FAIL
+Update Task Missing Title,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/1/update/,0,400,FAIL
+Update Task Empty JSON,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/1/update/,0,400,FAIL
+Update Non-Existing Task,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/9999/update/,0,404,FAIL
+Update Task Invalid Method,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/1/update/,0,405,FAIL
+Delete Existing Task,DELETE,http://127.0.0.1:9000/Todo/APIv1/tasks/1/,200,200,PASS
+Delete Already Deleted Task,DELETE,http://127.0.0.1:9000/Todo/APIv1/tasks/1/,200,500,FAIL
+Delete Task Invalid ID,DELETE,http://127.0.0.1:9000/Todo/APIv1/tasks/abc/,0,404,FAIL
+Wrong Method On Delete,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/2/,0,405,FAIL
+Wrong Method On List,PUT,http://127.0.0.1:9000/Todo/APIv1/tasks/,0,405,FAIL
+List Tasks After Operations,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/,200,200,PASS
+Create Task With Long Title,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/,201,201,PASS
+Update Task With Long Description,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/2/update/,0,200,FAIL
+Get Task Zero ID,GET,http://127.0.0.1:9000/Todo/APIv1/tasks/0/,0,400,FAIL
+Update Task Invalid Status Enum,POST,http://127.0.0.1:9000/Todo/APIv1/tasks/2/update/,0,400,FAIL
