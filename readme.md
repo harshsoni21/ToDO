@@ -40,7 +40,7 @@ The project provides **RESTful APIs** for CRUD operations on tasks, along with *
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/harshsoni21/ToDO.git
 cd ToDO
 pip install -r requirements.txt
 python manage.py runserver
